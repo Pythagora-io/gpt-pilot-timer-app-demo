@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="timer-form">
+            <div class="form-group">
+                <label for="timeInput">Enter time in seconds:</label>
+                <input type="number" id="timeInput" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add timer</button>
+        </form>
+
+        <div id="timers-container"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
